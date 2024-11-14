@@ -1,11 +1,13 @@
 <template>
   <main class="w-full flex-grow bg-gray-50 p-8 md:p-12 lg:p-24">
     <section class="space-y-12">
+      <!-- Titolo principale -->
       <h2 class="text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-10">
-        Scopri di più sul nostro progetto
+        {{ $t('homeTitle') }}
+        <!-- Traduzione del titolo -->
       </h2>
       <p class="text-lg text-center text-gray-600 mb-16">
-        Homarus Gammarus è un'iniziativa dedicata a...
+        {{ $t('homeIntro') }}
       </p>
 
       <!-- Gli elementi principali -->
@@ -19,8 +21,10 @@
           class="w-48 h-48 object-cover rounded-full shadow-lg opacity-0 transform scale-90 transition-all"
         />
         <div class="text-center md:text-left max-w-md">
-          <h3 class="text-2xl font-semibold text-gray-800">Caratteristica 1</h3>
-          <p class="text-gray-600 md:mr-6">Bre ve descrizione della prima caratteristica.</p>
+          <h3 class="text-2xl font-semibold text-gray-800">{{ $t('characteristic1') }}</h3>
+          <!-- Traduzione caratteristica 1 -->
+          <p class="text-gray-600 md:mr-6">{{ $t('description1') }}</p>
+          <!-- Traduzione della descrizione -->
         </div>
       </div>
 
@@ -34,8 +38,10 @@
           class="w-48 h-48 object-cover rounded-full shadow-lg opacity-0 transform scale-90 transition-all"
         />
         <div class="text-center md:text-left md:mr-6 max-w-md">
-          <h3 class="text-2xl font-semibold text-gray-800">Caratteristica 2</h3>
-          <p class="text-gray-600">Breve descrizione della seconda caratteristica.</p>
+          <h3 class="text-2xl font-semibold text-gray-800">{{ $t('characteristic2') }}</h3>
+          <!-- Traduzione caratteristica 2 -->
+          <p class="text-gray-600">{{ $t('description2') }}</p>
+          <!-- Traduzione della descrizione -->
         </div>
       </div>
 
@@ -49,8 +55,10 @@
           class="w-48 h-48 object-cover rounded-full shadow-lg opacity-0 transform scale-90 transition-all"
         />
         <div class="text-center md:text-left max-w-md">
-          <h3 class="text-2xl font-semibold text-gray-800">Caratteristica 3</h3>
-          <p class="text-gray-600 md:mr-6">Breve descrizione della terza caratteristica.</p>
+          <h3 class="text-2xl font-semibold text-gray-800">{{ $t('characteristic3') }}</h3>
+          <!-- Traduzione caratteristica 3 -->
+          <p class="text-gray-600 md:mr-6">{{ $t('description3') }}</p>
+          <!-- Traduzione della descrizione -->
         </div>
       </div>
 
@@ -64,8 +72,10 @@
           class="w-48 h-48 object-cover rounded-full shadow-lg opacity-0 transform scale-90 transition-all"
         />
         <div class="text-center md:text-left md:mr-6 max-w-md">
-          <h3 class="text-2xl font-semibold text-gray-800">Caratteristica 4</h3>
-          <p class="text-gray-600">Breve descrizione della quarta caratteristica.</p>
+          <h3 class="text-2xl font-semibold text-gray-800">{{ $t('characteristic4') }}</h3>
+          <!-- Traduzione caratteristica 4 -->
+          <p class="text-gray-600">{{ $t('description4') }}</p>
+          <!-- Traduzione della descrizione -->
         </div>
       </div>
 
@@ -79,8 +89,10 @@
           class="w-48 h-48 object-cover rounded-full shadow-lg opacity-0 transform scale-90 transition-all"
         />
         <div class="text-center md:text-left max-w-md">
-          <h3 class="text-2xl font-semibold text-gray-800">Caratteristica 5</h3>
-          <p class="text-gray-600 md:mr-6">Breve descrizione della quinta caratteristica.</p>
+          <h3 class="text-2xl font-semibold text-gray-800">{{ $t('characteristic5') }}</h3>
+          <!-- Traduzione caratteristica 5 -->
+          <p class="text-gray-600 md:mr-6">{{ $t('description5') }}</p>
+          <!-- Traduzione della descrizione -->
         </div>
       </div>
     </section>

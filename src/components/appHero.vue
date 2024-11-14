@@ -9,7 +9,7 @@
       <button
         class="absolute bottom-1/4 left-1/2 transform -translate-x-1/2 bg-custom-blue text-white px-6 py-3 rounded-lg shadow-lg hover:bg-custom-blue-dark transition-300"
       >
-        Galleria
+        {{ $t('gallery') }}
       </button>
     </div>
   </section>

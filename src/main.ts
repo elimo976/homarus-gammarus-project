@@ -10,12 +10,16 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
 
+import i18n from './i18n'
+
 library.add(faChevronUp)
 
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+
+app.use(i18n)
 
 app.component('font-awesome-icon', FontAwesomeIcon)
 

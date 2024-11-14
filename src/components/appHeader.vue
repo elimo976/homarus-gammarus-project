@@ -21,7 +21,7 @@
           href="#"
           class="text-lg md:text-xl font-medium text-gray-500 hover:text-custom-blue text-center"
         >
-          Pubblicazioni
+          {{ $t('publication') }}
         </a>
       </div>
     </div>

@@ -1,0 +1,28 @@
+export default {
+  it: {
+    aboutUs: 'Cismar - chi siamo',
+    lobster: 'Astice - biologia e pesca',
+    conservation: 'Conservazione e gestione',
+    releases: 'Allevamento e rilasci',
+    results: 'Risultati',
+    research: 'Ricerca',
+    project: 'Progetti',
+    publications: 'Pubblicazioni',
+    thirdMission: 'Terza missione',
+    conferences: 'Conferenze',
+    orientation: 'Orientamento',
+  },
+  en: {
+    aboutUs: 'Cismar - about us',
+    lobster: 'Lobster - biology and fishing',
+    conservation: 'Conservation and management',
+    releases: 'Reproduction and releases',
+    results: 'Results',
+    research: 'Research',
+    project: 'Projects',
+    publications: 'Publications',
+    thirdMission: 'Third mission',
+    conferences: 'Conferences',
+    orientation: 'Orientation',
+  },
+}

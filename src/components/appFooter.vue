@@ -3,6 +3,7 @@
     class="w-full bg-gradient-to-r from-custom-blue-dark to-custom-blue text-white py-6 px-4 mt-auto"
   >
     <div class="text-center">
+      <h1 class="mb-2 text-lg text-black">{{ $t('textFooter') }}</h1>
       <p class="text-sm">
         &copy; 2024
         <a href="mailto:elisamorreale@gmail.com" class="hover:underline">

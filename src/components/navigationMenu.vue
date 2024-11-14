@@ -105,6 +105,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 interface MenuItem {
   title: string
@@ -118,41 +119,43 @@ const menuOpen = ref(false)
 const isMdOrLarger = ref(false)
 const isLgOrLarger = ref(false)
 
+const { t } = useI18n()
+
 const menuItems = ref<MenuItem[]>([
   {
     title: 'Home',
     link: '/',
     submenuOpen: false,
     children: [
-      { title: 'Cismar - chi siamo', link: '/cismar' },
-      { title: 'Astice - biologia e pesca', link: '/astice' },
+      { title: t('aboutUs'), link: '/cismar' },
+      { title: t('lobster'), link: '/astice' },
     ],
   },
   {
-    title: 'Conservazione e gestione',
+    title: t('conservation'),
     link: '/conservazione',
     submenuOpen: false,
     children: [
-      { title: 'Allevamento e rilasci', link: '/allevamento' },
-      { title: 'Risultati', link: '/risultati' },
+      { title: t('releases'), link: '/allevamento' },
+      { title: t('results'), link: '/risultati' },
     ],
   },
   {
-    title: 'Ricerca',
+    title: t('research'),
     link: '/ricerca',
     submenuOpen: false,
     children: [
-      { title: 'Progetti', link: '/progetti' },
-      { title: 'Pubblicazioni', link: '/pubblicazioni' },
+      { title: t('project'), link: '/progetti' },
+      { title: t('publications'), link: '/pubblicazioni' },
     ],
   },
   {
-    title: 'Terza missione',
+    title: t('thirdMission'),
     link: '/terza-missione',
     submenuOpen: false,
     children: [
-      { title: 'Conferenze', link: '/conferenze' },
-      { title: 'Orientamento', link: '/orientamento' },
+      { title: t('conferences'), link: '/conferenze' },
+      { title: t('orientation'), link: '/orientamento' },
       { title: 'Media', link: '/media' },
     ],
   },
@@ -190,6 +193,6 @@ onMounted(() => {
 
 <style scoped>
 nav div.group div.absolute {
-  min-width: 200px;
+  min-width: 230px;
 }
 </style>
