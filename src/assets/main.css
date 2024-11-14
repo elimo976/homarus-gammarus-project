@@ -1,0 +1,27 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#app {
+  width: 100%; /* Rimuovi il max-width e usa una larghezza completa */
+  margin: 0 auto; /* Centra il contenuto */
+  padding: 0;
+  font-weight: normal;
+}
+
+/* Media query per schermi più larghi */
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garantisce che il corpo prenda almeno la altezza del viewport */
+  }
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

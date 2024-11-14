@@ -1,0 +1,25 @@
+IT/EN
+creazione logo: astice
+* Macrovoci:
+- Home
+    - Cismar - chi siamo **2
+    - Astice - biologia e pesca **1
+- Conservazione e gestione **4
+    - Allevamento e rilasci
+    - Risultati
+- Ricerca:
+    - Progetti **3
+    - Pubblicazioni
+- Terza missione:
+    - Conferenze
+    - Orientamento
+    - Media - Rassegna Stampa
+
+* Multimedia:
+ apertura: video con rilascio. Max 30 sec.
+
+* Colore: cfr. sito unitus DEB: #5db1a7
+
+* Loghi: DEB e Ateneo, Pnrr?
+
+** sezioni in Home
