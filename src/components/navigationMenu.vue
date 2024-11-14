@@ -1,5 +1,5 @@
 <template>
-  <nav class="z-10 bg-custom-blue text-white py-2">
+  <nav class="z-10 bg-custom-blue text-white lg:py-2 md:py-0">
     <!-- Hamburger Menu per schermi piccoli -->
     <div class="md:hidden flex justify-end px-4 py-3">
       <button @click="toggleMenu" class="text-white">
@@ -46,7 +46,7 @@
     </div>
 
     <!-- Menu per schermi medi con sottomenu a comparsa -->
-    <div v-if="isMdOrLarger && !isLgOrLarger" class="flex flex-col items-center w-full space-y-2">
+    <div v-if="isMdOrLarger && !isLgOrLarger" class="flex flex-col items-center w-full">
       <div v-for="item in menuItems" :key="item.title" class="w-full">
         <div
           class="flex justify-between items-center w-full cursor-pointer"
@@ -54,18 +54,23 @@
         >
           <RouterLink
             :to="item.link"
-            class="text-xl block py-2 text-white w-full text-center hover:bg-custom-blue-dark hover:text-gray-800 focus:text-custom-blue-navy active:text-custom-blue-navy"
-            >{{ item.title }}</RouterLink
+            class="text-xl block py-2 text-white w-full text-center hover:bg-custom-blue-dark hover:text-gray-800 focus:text-custom-blue-navy active:text-custom-blue-navy border-b border-custom-blue-light"
           >
+            {{ item.title }}
+          </RouterLink>
         </div>
-        <div v-if="item.submenuOpen">
+        <div v-if="item.submenuOpen && item.children" class="flex flex-col items-center">
           <RouterLink
-            v-for="subItem in item.children"
+            v-for="(subItem, index) in item.children"
             :key="subItem.title"
             :to="subItem.link"
-            class="block py-1 text-lg text-center hover:bg-custom-blue-light hover:text-custom-blue-navy"
-            >{{ subItem.title }}</RouterLink
+            :class="[
+              'block w-full py-1 text-lg text-center hover:bg-custom-blue-light hover:text-custom-blue-navy',
+              index === item.children.length - 1 ? 'border-b-0' : '',
+            ]"
           >
+            {{ subItem.title }}
+          </RouterLink>
         </div>
       </div>
     </div>
@@ -88,13 +93,13 @@
         </RouterLink>
         <div
           v-if="item.children && item.submenuOpen"
-          class="absolute bg-custom-blue text-white mt-2 py-2 shadow-lg w-full"
+          class="absolute bg-custom-blue text-white mt-2 shadow-lg w-full"
         >
           <RouterLink
             v-for="subItem in item.children"
             :key="subItem.title"
             :to="subItem.link"
-            class="block px-4 py-2 hover:bg-custom-blue-light hover:text-custom-blue-navy whitespace-nowrap"
+            class="block px-4 py-2 hover:bg-custom-blue-light hover:text-custom-blue-navy whitespace-nowrap border-b border-gray-200 last:border-0"
             >{{ subItem.title }}</RouterLink
           >
         </div>

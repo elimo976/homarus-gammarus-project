@@ -13,14 +13,14 @@ export interface Messages {
 
 const messages: Messages = {
   en: {
-    ...homePage.en, // Spread delle traduzioni in inglese per la home page
+    ...homePage.en, // Spread delle traduzioni in inglese
     ...appHeader.en,
     ...navigationMenu.en,
     ...appHero.en,
     ...appFooter.en,
   },
   it: {
-    ...homePage.it, // Spread delle traduzioni in italiano per la home page
+    ...homePage.it, // Spread delle traduzioni in italiano
     ...appHeader.it,
     ...navigationMenu.it,
     ...appHero.it,
