@@ -8,11 +8,11 @@
         &copy; 2024
         <a href="mailto:elisamorreale@gmail.com" class="hover:underline">
           <span class="text-red-500">e</span>lisa<span class="text-red-500">m</span>orreale</a
-        >. All rights reserved.
+        >. {{ $t('rightsReserved') }}.
       </p>
       <div class="mt-4 space-x-4">
-        <RouterLink to="/privacy" class="hover:text-gray-300">Privacy Policy</RouterLink>
-        <RouterLink to="/terms" class="hover:text-gray-300">Terms of Service</RouterLink>
+        <RouterLink to="/privacy" class="hover:text-gray-300">{{ $t('privacyPolicy') }}</RouterLink>
+        <RouterLink to="/terms" class="hover:text-gray-300">{{ $t('termsService') }}</RouterLink>
       </div>
     </div>
   </footer>
