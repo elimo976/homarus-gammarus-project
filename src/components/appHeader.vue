@@ -1,16 +1,16 @@
 <template>
-  <header class="relative w-full py-8 px-6 shadow-md bg-white">
+  <header class="relative w-full py-8 px-8 shadow-md bg-white">
     <div
       class="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-between"
     >
       <!-- Logo a sinistra, ma sopra nel layout mobile -->
       <div class="flex-shrink-0 order-1 md:order-1 mb-4 md:mb-0">
-        <img src="@/assets/logo.svg" alt="Logo" class="h-10 w-auto" />
+        <img src="@/assets/loghi/logo-astice-prova.svg" alt="Logo" class="h-20 w-auto" />
       </div>
 
       <!-- Titolo centrato sopra il logo nei dispositivi mobili -->
       <h1
-        class="text-3xl md:text-4xl text-custom-blue font-bold text-center flex-1 order-2 md:order-2 mb-4 md:mb-0"
+        class="text-3xl md:text-4xl text-custom-blue font-bold text-center flex-1 order-2 md:order-2 lg:mt-3 md:mt-3 mb-4 md:mb-0"
       >
         Homarus Gammarus
       </h1>
@@ -27,7 +27,7 @@
     </div>
 
     <!-- Selettore di lingua -->
-    <div class="absolute top-4 right-6 flex space-x-3 text-lg">
+    <div class="absolute top-4 right-8 flex space-x-3 text-lg">
       <button
         @click="setLanguage('it')"
         :class="{ 'text-gray-400': language === 'en', 'text-black': language === 'it' }"
