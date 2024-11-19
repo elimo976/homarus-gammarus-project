@@ -5,7 +5,11 @@
     >
       <!-- Logo a sinistra, ma sopra nel layout mobile -->
       <div class="flex-shrink-0 order-1 md:order-1 mb-4 md:mb-0">
-        <img src="@/assets/loghi/logo-astice-prova.svg" alt="Logo" class="h-20 w-auto" />
+        <img
+          src="@/assets/loghi/logo-astice-fronte-cerchio-sfondobianco.svg"
+          alt="Logo"
+          class="h-20 w-auto"
+        />
       </div>
 
       <!-- Titolo centrato sopra il logo nei dispositivi mobili -->
