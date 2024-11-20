@@ -6,7 +6,11 @@
       <h1 class="mb-2 text-lg text-black">{{ $t('textFooter') }}</h1>
       <p class="text-sm">
         &copy; 2024
-        <a href="mailto:elisamorreale@gmail.com" class="hover:underline">
+        <a
+          href="mailto:elisamorreale@gmail.com"
+          aria-label="Contattami via email"
+          class="hover:underline"
+        >
           <span class="text-red-500">e</span>lisa<span class="text-red-500">m</span>orreale</a
         >. {{ $t('rightsReserved') }}.
       </p>
